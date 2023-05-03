@@ -1,0 +1,183 @@
+html {
+        background-color: black;
+        cursor: default;
+        font-family: "Noto Sans Math", sans-serif;
+        font-weight: 500;
+        transition: 400ms;
+}
+
+.container {
+        display: block;
+        user-select: none;
+}
+.top {
+        height: 22vh;
+        transition: 400ms;
+}
+#displayContainer {
+        position: relative;
+        height: 7rem;
+        width: 24.2rem;
+        border-radius: 0.25rem;
+        text-align: right;
+        align-items: center;
+        margin: 1rem auto;
+        transition: 400ms;
+}
+#display {
+        border-radius: 0.25rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        width: 40rem;
+        top: 3rem;
+        right: -0.7rem;
+        font-size: 40px;
+        transition: 400ms;
+        -webkit-user-select: all;
+        -ms-user-select: all;
+        user-select: all;
+}
+#display2 {
+        position: absolute;
+        width: 40rem;
+        top: 1rem;
+        right: -0.6rem;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.671);
+}
+.button:hover {
+        color: black;
+        background-color: rgba(240, 248, 255, 0.637);
+}
+.button {
+        color: rgb(214, 214, 214);
+        font-size: 28px;
+        border-radius: 0.25rem;
+        cursor: default;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        transition: all 200ms ease-out;
+}
+.button:active {
+        color: black;
+        background-color: rgb(255, 255, 255);
+}
+#plus,
+#mult,
+#divi,
+#mine {
+        font-size: 34px;
+}
+.equal {
+        color: cyan;
+        font-size: 35px;
+        transition: all 200ms ease-out;
+}
+.equal:hover {
+        color: black;
+        background-color: rgba(0, 255, 255, 0.753);
+}
+.equal:active {
+        color: black;
+        background-color: cyan;
+}
+.numpad {
+        width: 30.2rem;
+        height: 18rem;
+        display: grid;
+        grid-template-columns: 6rem 6rem 6rem 6rem 6rem;
+        grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem;
+        gap: 0px;
+        margin: 1rem auto;
+        transition: 400ms;
+}
+.c {
+        font-size: 28px;
+        color: rgb(156, 0, 73);
+        transition: 200ms ease-out;
+}
+.c:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(156, 0, 73);
+}
+.c:active {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 0, 119);
+}
+#light-mode {
+        color: rgb(185, 185, 185);
+        transition: 400ms;
+        cursor: pointer;
+        user-select: none;
+}
+.hover {
+        color: black;
+}
+.hover:hover {
+        background-color: rgba(44, 44, 44, 0.795);
+        color: white;
+}
+.hover:active {
+        background-color: rgb(0, 0, 0);
+        color: white;
+}
+.chover {
+        color: rgb(156, 0, 73);
+}
+.chover:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 0, 119);
+}
+.chover:active {
+        color: rgb(255, 255, 255);
+        background-color: rgb(155, 0, 72);
+}
+.ehover {
+        color: cyan;
+}
+.ehover:hover {
+        color: white;
+        background-color: cyan;
+}
+.ehover:active {
+        color: white;
+        background-color: rgb(0, 185, 185);
+}
+
+#sqrt {
+        font-size: 28px;
+}
+#pow2 {
+        font-size: 28px;
+}
+#inv {
+        font-size: 28px;
+}
+#ce {
+        font-size: 28px;
+}
+#del {
+        font-size: 28px;
+}
+
+@media only screen and (max-height: 650px) {
+        .top {
+                height: 5vh;
+        }
+}
+@media only screen and (max-height: 550px) {
+        .top {
+                height: 0vh;
+        }
+        .numpad {
+                width: 24.3rem;
+                height: 13rem;
+                grid-template-columns: 6rem 6rem 6rem 6rem;
+                grid-template-rows: 2.3rem 2.3rem 2.3rem 2.3rem 2.3rem;
+        }
+        #displayContainer {
+                height: 5rem;
+                transition: 400ms;
+        }
+}

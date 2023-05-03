@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    
+    <script type="text/javascript" src="app.js">
+    </script>
+    <i class="gg-sun" id="light-mode" onclick="lightmode()"></i>
+    <div class="top"></div>
+    <div class="container">
+        <div id="displayContainer">
+            <div id="display2"></div>
+            <div id="display">0</div>
+        </div>
+        <div class="numpad" id="numpad">
+            <div class="button" id="xpowy" onclick="op(this)">
+               x^y 
+            </div>
+            <div class="button" id="percent">%</div>
+            <div class="button" id="ce" onclick="ce()">CE</div>
+            <div class="button c" id="c" onclick="cl()">C</div>
+            <div class="button c" id="del" onclick="del()">⌫</div>
+            <div class="button" id="yroot" onclick="op(this)">
+                yrtx
+            </div>
+            <div class="button" id="inv" onclick="inv()">
+                1/x
+            </div>
+            <div class="button" id="pow2" onclick="pow2()">
+                x^2
+            </div>
+            <div class="button" id="sqrt" onclick="square2()">
+                sqrt
+            </div>
+            <div class="button" id="divi" onclick="op(this)">÷</div>
+            <div class="button" onclick="log10()">
+                log
+            </div>
+            <div class="button" id="7" onclick="eventHand(this)">7</div>
+            <div class="button" id="8" onclick="eventHand(this)">8</div>
+            <div class="button" id="9" onclick="eventHand(this)">9</div>
+            <div class="button" id="mine" onclick="op(this)">−</div>
+            <div class="button" id="logyx" onclick="op(this)">
+                logyx
+            </div>
+            <div class="button" id="4" onclick="eventHand(this)">4</div>
+            <div class="button" id="5" onclick="eventHand(this)">5</div>
+            <div class="button" id="6" onclick="eventHand(this)">6</div>
+            <div class="button" id="mult" onclick="op(this)">×</div>
+            <div class="button" onclick="ex()">
+                e^x
+            </div>
+            <div class="button" id="1" onclick="eventHand(this)">1</div>
+            <div class="button" id="2" onclick="eventHand(this)">2</div>
+            <div class="button" id="3" onclick="eventHand(this)">3</div>
+            <div class="button" id="plus" onclick="op(this)">+</div>
+            <div class="button" onclick="tenx()">
+                10^x
+            </div>
+            <div class="button" id="+/-" onclick="signChanger()">+/-</div>
+            <div class="button" id="0" onclick="eventHand(this)">0</div>
+            <div class="button" id="dot" onclick="eventHand(this)">.</div>
+            <div class="button equal" id="equal" onclick="ans()">=</div>
+        </div>
+        <div class="operations">
+        </div>
+    </div>
+</body>
+
+</html>
